@@ -188,7 +188,6 @@ const forgeTheFellowShip = () => {
   const $fellowship = $('<div/>').attr('id','the-fellowship');
   // 2. add an h1 with the text 'The Fellowship' to this new div
   $fellowship.html('<h1>The Fellowship</h1>');
-  console.log($fellowship);
   // 3. append the fellowship to middle-earth
   $('#middle-earth').append($fellowship);
   // 4. add the unordered lists of hobbits and buddies to 'the-fellowship'
@@ -221,11 +220,12 @@ const theBalrog = () => {
 const hornOfGondor = () => {
 
   // 1. create a pop-up alert that the horn of gondor has been blown
-
+  alert('The horn of Gondor has been blown!');
   // 2. Boromir's been killed by the Uruk-hai! Put a linethrough on Boromir's name
-
+  const $boromir = $('#the-fellowship .buddy')[3];
+  $($boromir).css('text-decoration','line-through');
   // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
-
+  $($('.baddy')[2]).remove();
 };
 
 // COMMIT YOUR WORK
