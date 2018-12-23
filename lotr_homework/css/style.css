@@ -28,6 +28,11 @@ button {
   margin: 12px;
 }
 
+.the-white {
+  background-color: white;
+  border: 5px solid grey;
+}
+
 
 /* html, body {
   height: 100%;
